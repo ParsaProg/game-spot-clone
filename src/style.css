@@ -46,7 +46,7 @@ body {
     }
     div:hover {
       color: var(--color-primary);
-      .arrow-icon svg{
+      .arrow-icon svg {
         transform: rotate(180deg);
       }
       .arrow-icon svg {
@@ -72,54 +72,208 @@ body {
     display: flex;
     align-items: center;
   }
-  .right-float{
+  .right-float {
     gap: 1.5rem;
     display: flex;
     align-items: center;
-    .user-icon svg{
-        cursor: pointer;
-        width: 1rem;
-        height: 1rem;
+    .user-icon svg {
+      cursor: pointer;
+      width: 1rem;
+      height: 1rem;
     }
-    .search-icon svg{
-        cursor: pointer;
-        width: 1rem;
-        height: 1rem;
+    .user-icon-hover-line {
+      width: auto;
+      height: 1.5px;
+      display: block;
     }
-  };
+    .user-icon:hover {
+      .user-icon-hover-line {
+        background-color: var(--color-primary);
+      }
+    }
+    .user-icon svg:hover {
+      fill: var(--color-primary);
+    }
+    .search-icon svg {
+      cursor: pointer;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 }
 
-.left-float{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.left-float {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  
+  display: flex;
+  align-content: center;
 }
 
 #header {
-    width: 80%;
-    margin: auto;
-    font-family:poppins;
+  width: 80%;
+  margin: auto;
+  font-family: poppins;
 }
 
 #header .top {
-    display:flex;
-    gap: 10px;
-    font-size: 0.625rem;
-    padding-top:20px;
-    padding-bottom: 20px;
-    color:rgb(104, 102, 102);
+  display: flex;
+  gap: 10px;
+  font-size: 0.625rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(104, 102, 102);
 }
 
-#header .top > div:hover{
-    color:rgb(222, 0, 74);
-    cursor:pointer;
+#header .top > div:hover {
+  color: rgb(222, 0, 74);
+  cursor: pointer;
+}
+
+.line {
+  border-top: 1px solid #bbb;
+}
+
+.main-row-images {
+  gap: 2rem;
+  position: relative;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  .black-filter {
+    background-color: rgba(0, 0, 0, 0.607);
+    width: 100%;
+    height: 30rem;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .tec-container {
+    cursor: pointer;
+    position: relative;
+    width: 55rem;
+    height: 30rem;
+    background-image: url("../assets/images/tec.jpg");
+    background-position: center;
+    transition: 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .tec-container:hover {
+    .black-filter {
+      opacity: 1;
+    }
+    h1 {
+      transform: translateY(-30px);
+    }
+    span {
+      opacity: 0.8;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  h1 {
+    position: absolute;
+    bottom: 10px;
+    padding-left: 20px;
+    font-size: calc(22px + 4 * ((100vw - 320px) / 960));
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  span {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .cartoon-container {
+    cursor: pointer;
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    background-image: url("../assets/images/cartoon.jpg");
+    background-position: center;
+    transition: 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.216);
+
+      transition: 0.5s;
+    }
+  }
+  .cartoon-container:hover {
+    .black-filter {
+      opacity: 1;
+    }
+    h1 {
+      transform: translateY(-100px);
+    }
+    span {
+      opacity: 0.8;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  margin-top: 30px;
+}
+
+.grid-contents {
+  width: 74.2%;
+  margin: auto;
+  justify-content: start;
+  display: flex;
+  gap: 2.33rem;
+
+  .main-grid {
+    
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .main-grid:hover {
+    h3 {
+      color: var(--color-primary);
+    }
+  }
+  .main-grid > .title-image {
+    width: 20rem;
+    height: 12rem;
+    background-image: var(--link);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h3 {
+    transition: 0.2s;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 700;
+    color: #262626;
+    width: 20rem;
+    margin-top: 0.5rem;
+  }
 }
