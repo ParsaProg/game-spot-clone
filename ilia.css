@@ -25,3 +25,8 @@ body{
     padding:20px;
     color:rgb(104, 102, 102);
 }
+
+#header > .top > div:hover{
+    color:rgb(222, 0, 74);
+    cursor:pointer;
+}
