@@ -48,5 +48,25 @@ body{
 
 #content > .game_deals > h2 {
     color:rgb(222, 0, 74);
+    height:50px
 }
 
+#content > .game_deals > .slider {
+    /* border:1px solid red; */
+    height:230px;
+    display:flex;
+    justify-content:space-between;
+    overflow:hidden;
+}
+
+#content > .game_deals > .slider > div > p{
+    max-width:320px;
+    overflow: hidden;
+    white-space: normal;
+    height: 3rem; 
+    text-overflow: -o-ellipsis-lastline;
+}
+
+#content > .game_deals > .slider > div {
+    margin-right:50px;
+}
