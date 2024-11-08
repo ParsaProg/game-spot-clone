@@ -44,12 +44,63 @@ body{
 }
 
 #content > .game_deals {
-    height:300px;
+    height:350px;
     display:flex;
     flex-direction:column;
 }
 
 #content > .game_deals > h2 {
     color:rgb(222, 0, 74);
+    height:50px
 }
+
+#content > .game_deals > #slider {
+    /* border:1px solid red; */
+    height:230px;
+    display:flex;
+    justify-content:space-between;
+    overflow:visible;
+}
+
+#content > .game_deals > #slider > div > p{
+    max-width:320px;
+    overflow: hidden;
+    white-space: normal;
+    height: 3rem; 
+    text-overflow: -o-ellipsis-lastline;
+}
+
+#content > .game_deals > #slider > div {
+    margin-right:50px;
+}
+
+#content > .game_deals > .up{
+    display:flex;
+}
+
+#left {
+    width:30px;
+    height:30px;
+    border-radius:10px;
+    margin-bottom:10px;
+    background-color:rgb(191, 191, 191);
+    background: url("leftB.png") no-repeat 50%;
+	background-size:140%;
+    border:1px solid black;
+    margin-right:5px;
+    cursor:pointer;
+}
+
+#right {
+    width:30px;
+    height:30px;
+    border-radius:10px;
+    margin-bottom:10px;
+    background-color:rgb(191, 191, 191);
+    background: url("rightB.png") no-repeat 50%;
+	background-size:140%;
+    border:1px solid black;
+    cursor:pointer;
+}
+
 
