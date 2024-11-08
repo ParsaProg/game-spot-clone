@@ -72,12 +72,54 @@ body {
     display: flex;
     align-items: center;
   }
+  .right-float{
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    .user-icon svg{
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+    }
+    .search-icon svg{
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+    }
+  };
+}
+
+.left-float{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .header {
   display: flex;
   align-items: center;
-  width: 66rem;
+  justify-content: space-between;
+  width: 80%;
   margin: auto;
-  gap: 2rem;
+  
+}
+
+#header {
+    width: 80%;
+    margin: auto;
+    font-family:poppins;
+}
+
+#header .top {
+    display:flex;
+    gap: 10px;
+    font-size: 0.625rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color:rgb(104, 102, 102);
+}
+
+#header .top > div:hover{
+    color:rgb(222, 0, 74);
+    cursor:pointer;
 }
