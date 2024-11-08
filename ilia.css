@@ -9,11 +9,15 @@ body{
     box-sizing: border-box;
     width:1100px;
     margin:auto;
+<<<<<<< HEAD
+=======
+    /* border:1px solid red; */
+    font-family:poppins;
+>>>>>>> a5fafecc574cf1f66d0dae1f322b1ba802332714
 }
 
 #header {
     height:60px;
-    font-family:poppins;
 }
 
 #header > .top {
@@ -29,3 +33,23 @@ body{
     color:rgb(222, 0, 74);
     cursor:pointer;
 }
+
+.line {
+    border-top: 1px solid #bbb;
+}
+
+#content {
+    height:700px;
+    /* border:1px solid red; */
+}
+
+#content > .game_deals {
+    height:300px;
+    display:flex;
+    flex-direction:column;
+}
+
+#content > .game_deals > h2 {
+    color:rgb(222, 0, 74);
+}
+
