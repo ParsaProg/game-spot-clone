@@ -14,11 +14,14 @@ body{
 
 #header {
     height:60px;
-    display:flex;
     font-family:poppins;
 }
 
 #header > .top {
+    display:flex;
     flex-direction:row;
+    justify-content:space-between;
     font-size: 0.625rem;
+    padding:20px;
+    color:rgb(104, 102, 102);
 }
